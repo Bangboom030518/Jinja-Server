@@ -1,0 +1,11 @@
+{% extends "base.html.jinja" %}
+{% block main %}
+    <h1>Welcome to the cluedo game</h1>
+    <form action="/join_game" method="POST" class="grid grid-row gap-4">
+        <h2>Join Game</h2>
+        <div>
+            <input type="text" name="username" id="username" placeholder="Username" class="font-cursive text-center">
+        </div>
+        <button class="font-cursive border-4 border-emerald-900 rounded hover:bg-emerald-900 hover:text-white">Submit</button>
+    </form>
+{% endblock main %}

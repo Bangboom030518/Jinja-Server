@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        {% include "output.css" %}
+    </style>
+    <title>Cluedo Game</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DynaPuff&family=Rubik+Burned&display=swap" rel="stylesheet">
+
+</head>
+<body class="bg-emerald-300 bg-gradient-to-r from-emerald-300 to-cyan-300 grid align-items-stretch justify-content-stretch p-20">
+    <main class="border-8 border-emerald-900 bg-white text-emerald-900 p-5 rounded-xl shadow grid place-items-center gap-4">
+        {% block main %}
+            <h1>Error</h1>
+            <p>Sorry - there seems to be an error.</p>
+        {% endblock main %}
+    </main>
+</body>
+</html>
